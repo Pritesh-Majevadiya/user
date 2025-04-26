@@ -1,17 +1,26 @@
 package com.user.user.controller;
 
 import com.user.user.entity.User;
+import com.user.user.helper.UserHelper;
+import com.user.user.model.CommonResponse;
+import com.user.user.model.SaveUserRequestDTO;
+import com.user.user.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/user")
 public class UserController {
 
-//    private ResponseEntity<User> createUser(@RequestParam ){
-//
-//    }
+    @Autowired
+    private UserHelper userHelper;
+    @PostMapping
+    private ResponseEntity<CommonResponse> createUser(@RequestBody SaveUserRequestDTO requestDTO){
+        try{
+           return userHelper.createUser(requestDTO);
+        }catch (Exception exception){
+            throw new RuntimeException();
+        }
+    }
 }
