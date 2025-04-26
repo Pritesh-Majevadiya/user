@@ -1,5 +1,6 @@
-package com.user.user.model;
+package com.user.user.model.common;
 
+import com.user.user.model.Error;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

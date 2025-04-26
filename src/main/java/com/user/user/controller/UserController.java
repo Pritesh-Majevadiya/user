@@ -2,8 +2,8 @@ package com.user.user.controller;
 
 import com.user.user.entity.User;
 import com.user.user.helper.UserHelper;
-import com.user.user.model.CommonResponse;
 import com.user.user.model.SaveUserRequestDTO;
+import com.user.user.model.common.CommonResponse;
 import com.user.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

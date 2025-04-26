@@ -1,5 +1,6 @@
 package com.user.user.entity;
 
+import com.user.user.entity.common.CommonEntity;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
