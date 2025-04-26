@@ -1,19 +1,20 @@
-package com.user.user.entity;
+package com.user.user.entity.common;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import java.util.Date;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@SuperBuilder
+
+
+
 @Getter
 @Setter
+@SuperBuilder
+@MappedSuperclass
+@NoArgsConstructor
+@AllArgsConstructor
 public class CommonEntity {
 
     @Id
