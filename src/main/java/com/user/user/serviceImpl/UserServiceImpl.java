@@ -1,9 +1,9 @@
 package com.user.user.serviceImpl;
 
+import com.common_service.model.GetUserRequestDTO;
+import com.common_service.model.GetUserResponseDTO;
+import com.common_service.model.SaveUserRequestDTO;
 import com.user.user.entity.User;
-import com.user.user.model.GetUserRequestDTO;
-import com.user.user.model.GetUserResponseDTO;
-import com.user.user.model.SaveUserRequestDTO;
 import com.user.user.repository.UserRepository;
 import com.user.user.service.UserService;
 import com.user.user.specification.UserSpecification;

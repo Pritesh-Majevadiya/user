@@ -1,9 +1,9 @@
 package com.user.user.controller;
 
+import com.common_service.model.GetUserRequestDTO;
+import com.common_service.model.SaveUserRequestDTO;
+import com.common_service.model.common.CommonResponse;
 import com.user.user.helper.UserHelper;
-import com.user.user.model.GetUserRequestDTO;
-import com.user.user.model.SaveUserRequestDTO;
-import com.user.user.model.common.CommonResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -32,6 +32,4 @@ public class UserController {
             throw new RuntimeException();
         }
     }
-
-
 }
