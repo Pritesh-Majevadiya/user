@@ -1,7 +1,8 @@
 package com.user.user.exception;
 
+import com.common_service.model.common.CommonError;
+import com.common_service.model.common.CommonResponse;
 import com.user.user.exception.custom.ResourceNotFoundException;
-import com.user.user.model.common.CommonResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
